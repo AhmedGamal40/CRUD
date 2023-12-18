@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif ;
+    background-color: rgb(26, 25, 25);
+    color: white;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.header {
+    text-align: center;
+    margin: 30px 0 50px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.header p {
+    margin: 10px 0;
+}
+input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 6px;
+    padding: 4px;
+    color: aliceblue;
+}
+input:focus {
+    background: black;
+    transform: scale(1.1);
+}
+input::placeholder {
+    text-align: center;
+}
+.prices {
+    display: flex;
+    justify-content: center;
+}
+.prices input ,.prices span  {
+    width: 20%;
+    margin-left: 5px;
+}
+.prices span {
+    text-align: center;
+    margin: auto;
+    color: yellow;
+    font-weight: bold;
+}
+.prices span::before {
+    content: 'Total :';
+    text-align: center;
+    margin: auto 5px;
+    color: green;
+    font-weight: bold;
+}
+@media (max-width:767px) {
+    .prices span::before {
+        display: none;
+    }
+}
+button {
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    color: greenyellow;
+    background-color: #111;
+    border: none;
+    padding: 7px;
+    border-radius: 6px;
+    margin: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: black;
+    color: wheat;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+}
+button:focus {
+    background: green;
+}
+
+.btn-search {
+    display: flex;
+    justify-content: space-around;
+}
+.btn-search button:focus {
+    background: blueviolet;
+    color: aliceblue;
+}
+table {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+table tr th {
+    text-transform: uppercase;
+}
+@media (max-width:767px) {
+table tr th {
+        text-transform:capitalize;
+        font-size: small;
+        font-weight: 300;
+}
+table tr #Tax ,
+table tr #Ad,
+table tr #DIS {
+    display: none;
+}
+table tr .dis,
+table tr .dis {
+    display: none;
+}
+tbody tr td {
+    font-size: small;
+    font-weight: 300;
+}
+}
+table #update , table #delete {
+    background: none;
+}
+table #update:hover {
+    background-color: blue;
+    letter-spacing: 0;
+    transition: 0s;
+}
+table #delete:hover {
+    background-color: red;
+    letter-spacing: 0;
+    transition: 0s;
+}
+table #update:focus {
+    background-color: blue;
+    color: aliceblue;
+}
+table #delete:focus {
+    background-color: red;
+    color: aliceblue;
+}
+@media (max-width:767px) {
+    table #delete:focus,
+    table #update:focus {
+        padding: 0;
+    }
+}
+
+#deleteAll {
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    text-align: center;
+    border-radius: 6px;
+    margin: 15px 0;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#deleteAll:hover {
+    color: white;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+}
+#deleteAll:focus {
+    background-color: black;
+    color: red;
+}
+/* ---------------------- */
+
+/* Existing styles here... */
+
+/* Responsive styles for mobile devices */
